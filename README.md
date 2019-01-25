@@ -5,7 +5,7 @@
 </h4>
 
 <p align="center">
-Used this plugin and found it useful?<br /><a href="https://www.buymeacoffee.com/vpn" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+Used this plugin and found it useful?<br /><a href="https://www.buymeacoffee.com/digitalduke" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 </p>
 
 Information about installing and configuring at https://www.dokuwiki.org/plugin:sqlquery
