@@ -8,17 +8,17 @@ ENV CHECKSUM f83d0c0d5e6ec2f8a765bb710f068720
 
 RUN apk --update upgrade --no-cache; \
 	apk add --no-cache \
-	    php7 \
-	    php7-openssl \
-	    php7-xml \
-	    php7-fpm \
-	    php7-gd \
-	    php7-ldap \
-		php7-session \
-    	nginx \
-    	supervisor \
-    	curl \
-	    tar
+    php7 \
+    php7-openssl \
+    php7-xml \
+    php7-fpm \
+    php7-gd \
+    php7-ldap \
+	php7-session \
+	nginx \
+	supervisor \
+	curl \
+    tar
 
 RUN mkdir -p /run/nginx && \
     mkdir -p /var/www
