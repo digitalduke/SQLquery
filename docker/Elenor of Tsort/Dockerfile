@@ -27,7 +27,8 @@ RUN mkdir -p /run/nginx && \
     	echo "Wrong md5sum of downloaded file!"; \
     	exit 1; \
 	fi && \	
-    tar -zxf "dokuwiki-$VERSION.tgz" --strip-components 1
+    tar -zxf "dokuwiki-$VERSION.tgz" --strip-components 1 && \
+    rm dokuwiki-$VERSION.tgz
 
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD supervisord.conf /etc/supervisord.conf
