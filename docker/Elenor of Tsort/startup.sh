@@ -1,6 +1,5 @@
 #!/bin/sh
 
 set -e
-chown -R nobody /var/www
-su -s /bin/sh nobody -c 'php7 /var/www/bin/indexer.php -c'
+chown -R nobody:nobody /var/www
 exec /usr/bin/supervisord -c /etc/supervisord.conf
