@@ -13,6 +13,7 @@ RUN apk add --no-cache \
     php7-fpm \
     php7-gd \
 	php7-session \
+	php7-zlib \
 	nginx \
 	supervisor \
 	curl \
