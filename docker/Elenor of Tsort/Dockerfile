@@ -6,8 +6,7 @@ LABEL description="Docker image with DokuWiki `Elenor of Tsort`"
 ENV VERSION 2016-06-26e
 ENV CHECKSUM f83d0c0d5e6ec2f8a765bb710f068720
 
-RUN apk --update upgrade --no-cache; \
-	apk add --no-cache \
+RUN apk add --no-cache \
     php7 \
     php7-openssl \
     php7-xml \
@@ -20,9 +19,8 @@ RUN apk --update upgrade --no-cache; \
     tar
 
 RUN mkdir -p /run/nginx && \
-    mkdir -p /var/www
-
-RUN cd /var/www && \
+    mkdir -p /var/www && \
+	cd /var/www && \
 	curl -L -O "http://download.dokuwiki.org/src/dokuwiki/dokuwiki-$VERSION.tgz" && \
     if [ "$CHECKSUM" != "$(md5sum dokuwiki-$VERSION.tgz | awk '{print($1)}')" ]; then \
     	echo "Wrong md5sum of downloaded file!"; \
