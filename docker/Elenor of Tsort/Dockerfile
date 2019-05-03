@@ -13,7 +13,6 @@ RUN apk --update upgrade --no-cache; \
     php7-xml \
     php7-fpm \
     php7-gd \
-    php7-ldap \
 	php7-session \
 	nginx \
 	supervisor \
